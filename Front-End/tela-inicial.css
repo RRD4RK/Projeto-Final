@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+/*header*/
+nav{
+    background-color: white;
+    width: 100%;
+    height: 70px;
+}
+
+/*icone insta e zap*/
+#insta{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top:10px;
+    left: 50px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#insta:hover{
+    color: #D3B077;
+    transition: .5s;
+}
+
+#zap{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top:8px;
+    left: 125px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#zap:hover{
+    color: #D3B077;
+    transition: .5s;
+}
+
+/*botao logar*/
+#entrar{
+    color: #D3B077;
+    font-family: 'Jacques Francois', serif;
+    text-decoration: none;
+    padding: 5px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius:5px;
+    float: right;
+    right: 20px;
+    top: 17px;
+    position: absolute;
+    z-index:+1;
+    cursor: pointer;
+}
+
+#entrar:hover{
+    color: black;
+    background-color: #D3B077;
+    transition: .5s;
+}
+
+/*Body*/
+
+#imagem{
+    position: absolute;
+    left: 0;
+    right: 40px;
+    top: -100px;
+    bottom: 0;
+    margin: auto;
+}
+
+.servicos {
+    color: white;
+    position: relative;
+    top: 350px;
+    text-align: center; 
+    display: flex;
+    justify-content: space-around;
+}
+
+#item-1{
+    margin-left: 170px;
+}
+
+#item-2{
+    margin-right: 190px;
+}
+
+#botao_servico{
+    background-color: rgb(0, 0, 0);
+    color: #D3B077;
+    font-family: 'Jacques Francois', serif;
+    font-size: 32px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#botao_servico:hover{
+    background-color: #D3B077;
+    color: #000000;
+    transition: .5s;
+}
+
+.menu {
+    color: white;
+    position: relative;
+    top: 500px;
+    text-align: center; 
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.info{
+    color: white;
+    border: none;
+    display: inline-block;
+    position: relative;
+    font-family: 'Roboto', sans-serif; 
+    cursor: pointer;
+}
+
+/*Contato e Endereço*/
+#info{
+    color: #D3B077;
+    font-family: 'Jacques Francois', serif;
+    font-size: 32px;
+}
+
+#loc{
+    text-decoration: none;
+    color: white;
+}
+
+#mapa{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    border: 5px solid #D3B077;
+    cursor: pointer;
+}
+
+.div_mapa{
+    float:right;
+    position: relative;
+    right: -180px;
+    bottom: 80px;
+}
+

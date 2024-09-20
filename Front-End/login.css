@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    font-family: 'Jacques Francois', serif;
+    color: #D3B077;
+}
+
+#imagem{
+    position: absolute;
+    left: 250px;
+    top: -250px;
+    bottom: 0;
+    margin: auto;
+    width: 400px;
+}
+
+#kelly{
+    position: relative;
+    float: right;
+    border: 6px solid #D3B077;
+    border-radius: 5px;
+    z-index: -1;
+    width: 429.5px;
+    height: 585px;
+}
+
+#login{
+    font-size: 52px;
+    position: relative;
+    top: 320px;
+    margin-left: 360px;
+    
+}
+
+.horario{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 360px;
+    left: 320px;
+    width: 300px;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.n-tem-conta{
+    position: relative;
+    color: #D3B077;
+    font-family: 'Jacques Francois' serif;
+    font-size: 15px;
+    align-self: center;
+}
+
+a{
+    cursor: pointer;
+}
+
+#logar{
+    position: relative;
+    background-color: black;
+    color: #D3B077;
+    border-radius: 5px;
+    border: 2px solid #D3B077;
+    font-family: 'Jacques Francois', serif;
+    font-size: 15px;
+    height: 30px;
+    width: 120px;
+    align-self: center;
+    cursor: pointer;
+}
+
+#logar:hover{
+    background-color: #D3B077;
+    color: black;
+    transition: .5s;
+    border: 2px solid  white;
+    border-radius: 5px;
+}
+
+#cadastrar{
+    font-size: 52px;
+    position: relative;
+    top: 320px;
+    margin-left: 280px;
+         
+}
+
+#kelly-cadastro{
+    position: relative;
+    float: right;
+    border: 6px solid #D3B077;
+    border-radius: 5px;
+    z-index: -1;
+    width: 572.6px;
+    height: 700px;
+    box-sizing: border-box;
+}
+
+#maior{
+    font-size: 32px;
+        
+}
