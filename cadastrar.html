@@ -10,15 +10,15 @@
     <img src="img/logo_salao.png" id="imagem">
     <img src="img/Kelly_cabelo_log.jpeg" id="kelly-cadastro">
     <p id="cadastrar">CADASTRAR</p>
-        <form class="horario">
+        <form class="horario" action="incluir.php" method="post">
             <label for="email">Email:</label>
-            <input type="email">
+            <input type="email" name="email">
 
             <label for="name">Nome:</label>
-            <input type="text">
+            <input type="text" name="nome">
         
             <label for="password">Criar Senha:</label>
-            <input type="password" >
+            <input type="password" name="senha">
 
             <button type="submit" id="logar">Logar</button>
         </form>
