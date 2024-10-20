@@ -10,95 +10,85 @@ body{
     font-family: 'Jacques Francois', serif;
     color: #D3B077;
 }
+#cadastrar{
+    font-size: 52px;
+    position: relative;
+    top: 320px;
+    margin-left: 280px;
+         
+}
 
-#kelly{
+#kelly-cadastro{
     position: relative;
     float: right;
-    width: auto;
-    height: 100%;
-    border: 2px solid #D3B077;
+    border: 6px solid #D3B077;
     border-radius: 5px;
-    
+    z-index: -1;
+    width: 572.6px;
+    height: 130vh;
+    box-sizing: border-box;
+}
+
+#maior{
+    font-size: 32px;  
 }
 
 .tela{
-    position: relative;
-    display:flex;
+    position:relative;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: -200px;
 }
 
-#imagem{
-    margin-top: -10%;
-}
-
-#login{
+#cad{
     align-self: center;
-    font-size: 30px;
-    text-decoration: 2px underline;
+    font-size: 50px;
+    text-decoration: underline;
 }
+
 .horario{
     position: absolute;
-    margin-left:-150px;
+    margin-left:-110px;
     display: flex;
     flex-direction: column;
 }
+
 #font-email{
+    position: relative;
     align-self: center;
     font-size: 25px;
 }
-#email{
 
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 300px;
-    height: 15px;
+#font-nome{
+    position: relative;
+    align-self: center;
+    font-size: 25px;
 }
 
 #font-senha{
+    position: relative;
     align-self: center;
     font-size: 25px;
 }
-#password{
 
-    border: 1px solid black;
-    border-radius: 5px;
+.caixa{
     width: 300px;
-
+    height: 25px;
+    align-self:center;
+    border-radius:5px ;
 }
 
-#logar{
+#cadastro{
     border-radius: 5px;
     border:2px solid #D3B077;
     background-color: black;
     color: #D3B077;
     font-size: 20px;
-    width: 75px;
+    width: 125px;
     font-family: 'Jacques Francois', serif;
     align-self: center;
-
 }
 
-#logar:hover{
-    transition: .5s;
-    background-color: #D3B077;
-    color: black;
-    cursor: pointer;
+.form{
+    margin-left: -120px;
 }
-
-.n-tem-conta{
-    align-self: center;
-    font-size: 15px;
-}
-#maior{
-    font-size:25px ;
-    text-decoration: 2px underline;
-}
-
-a{
-    text-decoration: none;
-    color: #D3B077;
-}
-
-

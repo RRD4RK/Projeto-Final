@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="marc_horario.css">
+</head>
+<body>
+
+        <img src="img/logo_salao.png" id="logo">
+        <img src="img/3210465.jpg" id="fundo">
+
+        <div id="form">
+            <form id="formulario" action="form.php" method="POST">
+                <label for="escolha">Escolha o serviço</label>
+                <select name="escolha" id="escolha" required>
+                    <option disabled selected>Selecione uma opção</option>
+                    <option>Corte</option>
+                    <option>Selagem</option>
+                    <option>Coloração</option>
+                    <option>Progressiva</option>
+                    <option>Hidratação</option>
+                </select>
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="date">Horario</label>
+                <input type="datetime-local" name="horario" id="horario" step="3600" required>
+
+                <label for="pagamento">Forma de pagamento</label>
+                <select id="pagamento" name="pagamento" required>
+                    <option disabled selected>Selecione uma opção</option>
+                    <option value="hora">Pagamneto na hora</option>
+                    <option value="pix">PIX</option>
+                </select>
+                <input type="submit" value="Enviar" id="botao">
+                
+            </form>
+        </div>
+
+</body>
+</html>

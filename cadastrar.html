@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="cadastrar.css">
 </head>
 <body>
-    <img src="img/logo_salao.png" id="imagem">
+
     <img src="img/Kelly_cabelo_log.jpeg" id="kelly-cadastro">
-    <p id="cadastrar">CADASTRAR</p>
-        <form class="horario" action="incluir.php" method="post">
-            <label for="email">Email:</label>
-            <input type="email" name="email">
+    <div class="tela">
+        <img src="img/logo_salao.png" id="imagem">
+        <div class="form">
+            <form class="horario" action="incluir.php" method="post">
+                <p id="cad">CADASTRAR</p>
+                <label for="email" id="font-email">Email:</label>
+                <input type="email" name="email" class="caixa">
+                
+                <label for="name" id="font-nome">Nome:</label>
+                <input type="text" name="nome" class="caixa">
+                
+                <label for="password" id="font-senha">Criar Senha:</label>
+                <input type="password" name="senha" class="caixa"><br>
 
-            <label for="name">Nome:</label>
-            <input type="text" name="nome">
-        
-            <label for="password">Criar Senha:</label>
-            <input type="password" name="senha">
-
-            <button type="submit" id="logar">Logar</button>
-        </form>
+                <button type="submit" id="cadastro">Cadastrar</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

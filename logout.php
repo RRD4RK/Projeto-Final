@@ -1,6 +1,6 @@
 <?php
-session_start();
-$_SESSION['nome'] = null;
-session_destroy();
-header("location:pag_log.html");
+session_start(); 
+session_unset(); 
+session_destroy(); 
+header('Refresh:1; url=tela-inicial.html');
 ?>

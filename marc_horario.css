@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Jacques Francois', serif;
+    color: #D3B077;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+
+
+#logo, #fundo{
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    z-index: -1;
+    opacity: 20%;
+}
+
+#fundo{
+    opacity: 15%;
+}
+#form{
+    position: relative  ;
+    border: 2px solid #D3B077;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+#formulario{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+input,select{
+    padding: 8px;
+    margin: 10px;
+    width: 100%;
+}
+
+#botao{
+    height: 35px;
+    border-radius: 5px;
+    background-color: black;
+    color: #D3B077;
+    border: 2px solid #D3B077;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#botao:hover{
+    transition: .5s;
+    background-color: #D3B077;
+    color: black;
+}

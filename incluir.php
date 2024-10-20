@@ -3,10 +3,18 @@
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
+
 $conexao = mysqli_connect
 ('localhost','root','','salão_da_kelly');
-$sql = "insert into cliente (nome, email, senha) values ('$nome', '$email', '$senha')";
-echo $sql;
-mysqli_query($conexao, $sql);
+$email = mysqli_real_escape_string($conexao, $_POST['email']);
+
+
+
+    $sql = "INSERT INTO cliente (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+    $executar = mysqli_query($conexao, $sql);
+
+    header('location: login.php');
+
+
 mysqli_close($conexao);
 ?>

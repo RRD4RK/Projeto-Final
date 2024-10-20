@@ -4,26 +4,33 @@
 
 *{
     margin: 0;
+    padding: 0;
 }
 
 body{
     background-color: black;
+    font-family:'Jacques Francois', serif ;
+    color: #D3B077  ;
 }
 
 /*header*/
 nav{
-    background-color: white;
+    background-color: black;
     width: 100%;
     height: 70px;
+    border-bottom: 1px #D3B077 solid;
+    position: fixed;
 }
-
+.center{
+    position: relative;
+    display: flex;
+    text-align: center;    
+}
 /*icone insta e zap*/
 #insta{
     text-decoration: none;
-    color: black;
+    color: #FAEBD7;
     position: absolute;
-    top:10px;
-    left: 50px;
     font-size: 50px;
     cursor: pointer;
 }
@@ -35,11 +42,11 @@ nav{
 
 #zap{
     text-decoration: none;
-    color: black;
+    color: #FAEBD7;
     position: absolute;
-    top:8px;
-    left: 125px;
     font-size: 50px;
+    left: 5%;
+    top: 3px;
     cursor: pointer;
 }
 
@@ -73,93 +80,67 @@ nav{
 
 /*Body*/
 
-#imagem{
+#logo, #fundo{
     position: absolute;
-    left: 0;
-    right: 40px;
-    top: -100px;
-    bottom: 0;
-    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: 20%;
 }
 
-.servicos {
-    color: white;
-    position: relative;
-    top: 350px;
-    text-align: center; 
+#fundo{
+    opacity: 15%;
+}
+#conteiner{
+    border-bottom: 3px solid #D3B077;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 25px;
+    margin-bottom: 10%;
 }
-
-#item-1{
-    margin-left: 170px;
-}
-
-#item-2{
-    margin-right: 190px;
-}
-
-#botao_servico{
-    background-color: rgb(0, 0, 0);
-    color: #D3B077;
-    font-family: 'Jacques Francois', serif;
-    font-size: 32px;
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid white;
-    cursor: pointer;
-}
-
-#botao_servico:hover{
-    background-color: #D3B077;
-    color: #000000;
-    transition: .5s;
-}
-
-.menu {
-    color: white;
-    position: relative;
-    top: 500px;
-    text-align: center; 
+#sobre{
+    border-bottom: 3px solid #D3B077;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 15px;
+    margin-bottom: 10%;
 }
 
-
-.info{
-    color: white;
-    border: none;
-    display: inline-block;
-    position: relative;
-    font-family: 'Roboto', sans-serif; 
-    cursor: pointer;
+#tit{
+    text-align: center;
+    margin-top: -10%;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+table{
+    border: 3px solid #D3B077;
+    background: #000;
+    width: 100%;
+    margin-bottom: 60px;
+}
+th{
+    padding: 5px;
+}
+.imagem-th{
+    width: 100%;
+    height: auto;
+}
+#foot{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-/*Contato e Endereço*/
-#info{
-    color: #D3B077;
-    font-family: 'Jacques Francois', serif;
-    font-size: 32px;
-}
-
-#loc{
+#foot a{
     text-decoration: none;
-    color: white;
+    color: #D3B077;
+    border-bottom: 2px solid #D3B077;
 }
-
-#mapa{
-    height: 150px;
-    width: 150px;
-    border-radius: 5px;
-    border: 5px solid #D3B077;
-    cursor: pointer;
-}
-
-.div_mapa{
-    float:right;
-    position: relative;
-    right: -180px;
-    bottom: 80px;
-}
-
