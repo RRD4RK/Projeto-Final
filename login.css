@@ -14,7 +14,7 @@ body{
 #kelly{
     position: relative;
     float: right;
-    width: auto;
+    width: 50%;
     height: 100%;
     border: 2px solid #D3B077;
     border-radius: 5px;

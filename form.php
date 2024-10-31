@@ -1,6 +1,7 @@
 <?php
 session_start();
-
+include("sessao.php");
+include("topo.php");
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
     $conexao = mysqli_connect('localhost', 'root', '', 'salão_da_kelly');
@@ -9,25 +10,28 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         die("Conexão Falhou" . mysqli_connect_error());
     }
     
-    $servico = $_REQUEST['escolha'];
-    $nome = $_REQUEST['nome'];
+    $servico = $_POST['servico'];
+    $id = $_SESSION['id'];
     $horario = $_REQUEST['horario'];
-    $pagamento = $_REQUEST['pagamento'];
     
-    $sql = "INSERT INTO agendamentos(servico, nome, horario, pagamento) VALUES ('$servico', '$nome', '$horario', '$pagamento')";
-    
-    
-    if (!empty($sql)) {
-        if (mysqli_query($conexao, $sql)) {
-            header('Refresh:2; url=horario-marcado.html');
+    $sql = "INSERT INTO agendamentos(servico, id, horario) VALUES ('$servico','$id','$horario')";
+    $verifica = "SELECT horario from agendamentos where horario = $horario";
+    if($verifica == null){
+        echo "horario já esta agendado";
+    }else{
+        
+        if (!empty($sql)) {
+            if (mysqli_query($conexao, $sql)) {
+                header('Refresh:2; url=horario-marcado.html');
+            } else {
+                echo "Erro ao realizar o agendamento: " . mysqli_error($conexao);
+            }
         } else {
-            echo "Erro ao realizar o agendamento: " . mysqli_error($conexao);
+            echo "Consulta SQL está vazia!";
         }
-    } else {
-        echo "Consulta SQL está vazia!";
-    }
 
-    mysqli_close($conexao);
+        mysqli_close($conexao); 
+    }
 } else {
     echo "Método de requisição inválido!";
 }

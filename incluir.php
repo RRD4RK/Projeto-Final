@@ -1,4 +1,6 @@
 <?php
+include("sessao.php");
+include("topo.php");
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];
